@@ -91,11 +91,13 @@ cli.responders.set = function(str, split) {
 
 cli.responders.get = function(str, split){
     store.forEach((item) => {
-      if (str[1] == item.key) {
+      if (str[1] == item.key && item.session == sessionCount) {
         console.log(item.value)
         return true
       }
     })
+
+
 }
 
 cli.responders.delete = function(str) {
@@ -127,7 +129,7 @@ cli.responders.commit = function(str) {
 }
 
 cli.responders.rollback = function(str) {
-  console.log(str)
+  sessionCount = sessionCount - 1
 }
 
 // input processing
