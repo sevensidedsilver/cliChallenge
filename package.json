@@ -1,0 +1,15 @@
+{
+  "name": "opalchallenge",
+  "version": "1.0.0",
+  "description": "A CLI for Opal",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo \"node cliRun\""
+  },
+  "author": "Sean Ruffolo",
+  "preferGlobal": true,
+  "license": "ISC",
+  "bin": {
+  "start": "index.js"
+    }
+}
